@@ -5,7 +5,7 @@ const util = require("util");
 
 
 getGithubInfo = async (username, colorPicked) => {
-    let res = await axios.get("https://api.github.com/users" + username);
+    let res = await axios.get("https://api.github.com/users/" + username);
     const data = res.data;
     console.log (data);
     await fs.writeFile("index.html", generateHTML.generateHTML(data, colorPicked), 
@@ -76,7 +76,7 @@ function generateHTML(data, color) {
                   </div>
                   <div class="card col">
                     <h4>Followers</h4>
-                    <h5>0</h5>
+                    <h5>${data.followers}</h5>
                   </div>
                 </div>
                 <div class="row">
