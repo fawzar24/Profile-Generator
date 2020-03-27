@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather.css" />
+    <title>Weather DashBoard</title>
+</head>
+
+<body>
+    <!-- weather dashboard header -->
+    <div class="nav-wrapper">
+        <a class="brand">Weather Dashboard</a>
+    </div>
+
+    <div class="jumbotron">
+        <form class="form-inline text align center">
+            <div class="form-group mx-sm-3 mb-2">
+                <input type="city" class="form-control" id="input-city" placeholder="city name">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2" id="search-city">Search</button>
+        </form>
+    </div>
+    <div>
+
+        <!-- search history with be dumped here-->
+        <div class=row>
+            <div class="card" id="search-history" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Search History</h5>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title" id="input-date">date</h5>
+                  <h5 class="card-title" id="input-temp">temp</h5>
+                  <h5 class="card-title" id="input-humidity">humidity</h5>
+                  <h5 class="card-title" id="input-windspeed">wind speed</h5>
+                  <h5 class="card-title" id="input-UVindex">UV index</h5>
+                </div>
+              </div>
+        </div>
+       
+
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title" id = "card0-date">date</h1>
+                    <img src="" class="card-img-top" alt="...">
+                    <h2 class="temp" id="card0-temp">Temp</h2>
+                    <h3 class="humidity" id="card1-humidity">Humidity</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title" id = "card1-date">date</h1>
+                    <img src="" class="card-img-top" alt="...">
+                    <h2 class="temp" id="card2-temp">Temp</h2>
+                    <h3 class="humidity" id="card2-humidity">Humidity</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title" id = "card2-date">date</h1>
+                    <img src="" class="card-img-top" alt="...">
+                    <h2 class="temp" id="card3-temp">Temp</h2>
+                    <h3 class="humidity" id="card3-humidity">Humidity</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title" id = "card3-date">date</h1>
+                    <img src="" class="card4-img-top" alt="...">
+                    <h2 class="temp" id="temp">Temp</h2>
+                    <h3 class="humidity" id="card4-humidity">Humidity</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title" id = "card4-date">date</h1>
+                    <img src="" class="card-img-top" alt="...">
+                    <h2 class="temp" id="card5-temp">Temp</h2>
+                    <h3 class="humidity" id="card5-humidity">Humidity</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <footer class="section blue white-text darken-2 center">
+            <p>Weather Dashboard &copy; 2019</p>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="weather.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+
+.brand {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.input-field {
+    padding-top: 20px;
+
+}
+
+.form-inline {
+    padding-top: 50px;
+    align-content: center;
+}
+
+.nav-wrapper {
+    text-align: center;
+    color: blue;
+}
